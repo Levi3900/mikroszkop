@@ -1,0 +1,103 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "h h h h h"
+    "n ar ar ar a"
+    "f f f f f";
+    background-image: url(kepek/hatter.jpg);
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    grid-area: h;
+    background-color: rgb(0, 123, 133);
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Brush Script MT', 'Lucida handwriting', 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: rgb(249, 249, 217);
+}
+
+nav {
+    font-size: large;
+    grid-area: n;
+    background-color: rgb(249, 249, 217);
+    text-align: center;
+    padding: 50px;
+    border-right: 2px dotted rgb(0, 123, 133);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 2;
+}
+
+article {
+    grid-area: ar;
+    background-color: rgb(249, 249, 217);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+article h2 {
+    font-family: "Jokerman";
+    color: rgb(0, 123, 133);
+    text-shadow: 
+        -5px -5px 0 white,
+         5px -5px 0 white, /*chatgpt kód, remélem nem probléma hogy ezt nem tudtam máshogyan megcsinálni*/
+        -5px  5px 0 white,
+         5px  5px 0 white;
+}
+
+.kep {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    column-gap: 20px;
+}
+
+.kep > section {
+    background-color: rgb(0, 123, 133);
+    width: 350px;
+    padding: 10px;
+    color: white;
+}
+
+.szoveg {
+    margin-left: 30px;
+}
+
+img {
+    width: 100%;
+}
+
+aside {
+    grid-area: a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+    background-color: rgb(249, 249, 217);
+    border-left: 2px dotted rgb(0, 123, 133);
+    padding: 50px;
+}
+
+.blue {
+    color: rgb(0, 123, 133);
+}
+
+footer {
+    grid-area: f;
+    background-color: rgb(0, 123, 133);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    color: rgb(249, 249, 217);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
