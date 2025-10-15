@@ -101,3 +101,47 @@ footer {
     color: rgb(249, 249, 217);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+@media screen and (max-width: 500px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+            "h"
+            "n"
+            "a"
+            "ar"
+            "f";
+        grid-template-columns: 1fr;
+        width: 100%;    
+        margin: auto;
+        max-width: 450px;
+    }
+    .kep    {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    }
+
+    .kep > section {
+        background-color: rgb(0, 123, 133);
+        width: 100%;
+        color: white;
+    }
+    aside {
+        background-color: rgb(0, 123, 133);
+        color: white;
+        border: 20px rgb(249, 249, 217) solid;
+        text-align: left;
+    }
+    nav {
+        background-color: rgb(0, 123, 133);
+        border-right: 20px rgb(249, 249, 217) solid;
+        border-left: 20px rgb(249, 249, 217) solid;
+        border-top: 20px rgb(249, 249, 217) solid;
+        border-bottom: 10px rgb(249, 249, 217) solid;
+        text-align: left;
+    }
+    a {
+        color:white;
+    }
+}
